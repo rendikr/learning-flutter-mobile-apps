@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
@@ -18,6 +19,12 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text('Cashy'),
               backgroundColor: Colors.red,
+              actions: <Widget>[
+                IconButton(
+                  icon: Icon(Icons.mail),
+                  onPressed: () {},
+                )
+              ],
             ),
             // body: Text('Flutter Pertama')
             body: SafeArea(
