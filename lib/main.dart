@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: Text('Flutter Pertama')
+        // body: Text('Flutter Pertama')
+        body: SafeArea(child: Text('Flutter Pertama'))
       )
     );
   }
