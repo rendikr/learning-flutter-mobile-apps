@@ -29,7 +29,10 @@ class MyApp extends StatelessWidget {
             ),
             // body: Text('Flutter Pertama')
             body: SafeArea(
-                child: Text('Flutter Pertama')
+                child: Image(
+                  image: AssetImage('assets/images/ic_payment.png'),
+                  height: 200,
+                ),
             )
         )
     );
