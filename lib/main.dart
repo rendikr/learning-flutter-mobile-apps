@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'font_style.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               title: Text('Cashy'),
-              backgroundColor: Colors.green,
+              backgroundColor: Colors.blueAccent,
             ),
             // body: Text('Flutter Pertama')
             body: SafeArea(
@@ -41,8 +42,8 @@ class MyApp extends StatelessWidget {
                         image: AssetImage('assets/images/ic_payment.png'),
                         height: 200,
                       ),
-                      Text('Rich Together'),
-                      Text('Save Money')
+                      Text('Rich Together', style: mainHeader),
+                      Text('Save Money', style: subHeader)
                     ],
                   )
                 )
