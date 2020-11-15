@@ -18,21 +18,22 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               title: Text('Cashy'),
-              backgroundColor: Colors.red,
-              actions: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.mail),
-                  onPressed: () {},
-                  color: Colors.yellowAccent,
-                )
-              ],
+              backgroundColor: Colors.green,
             ),
             // body: Text('Flutter Pertama')
             body: SafeArea(
-                child: Image(
-                  image: AssetImage('assets/images/ic_payment.png'),
-                  height: 200,
-                ),
+                child: Container(
+                  child: Column(
+                    children: <Widget>[
+                      Image(
+                        image: AssetImage('assets/images/ic_payment.png'),
+                        height: 200,
+                      ),
+                      Text('Rich Together'),
+                      Text('Save Money')
+                    ],
+                  )
+                )
             )
         )
     );
