@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
                 IconButton(
                   icon: Icon(Icons.mail),
                   onPressed: () {},
+                  color: Colors.yellowAccent,
                 )
               ],
             ),
