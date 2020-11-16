@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:cashy_app/custom_colors.dart';
 
 TextStyle mainHeader = TextStyle(
   fontSize: 26,
-  color: Colors.blueGrey,
+  color: darkBlue,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w700
 );
 
 TextStyle subHeader = TextStyle(
-  fontSize: 14,
-  color: Colors.grey,
+  fontSize: 16,
+  color: darkSilver,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w300
 );
