@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
             body: SafeArea(
                 child: Container(
                   margin: EdgeInsets.only(
-                    left: 45.0,
+                    left: 23.0,
                     top: 0,
-                    right: 0,
+                    right: 23.0,
                     bottom: 0
                   ),
                   padding: EdgeInsets.only(
@@ -43,7 +43,10 @@ class MyApp extends StatelessWidget {
                         height: 200,
                       ),
                       Text('Rich Together', style: mainHeader),
-                      Text('Save Money', style: subHeader)
+                      Text('Save Money \nBuild your fortune',
+                        style: subHeader,
+                        textAlign: TextAlign.center
+                      )
                     ],
                   )
                 )
