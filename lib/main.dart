@@ -32,28 +32,34 @@ class MyApp extends StatelessWidget {
                   ),
                   padding: EdgeInsets.only(
                     left: 0,
-                    top: 50.0,
+                    top: 0,
                     right: 0,
                     bottom: 0
                   ),
-                  child: Column(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Image(
-                        image: AssetImage('assets/images/ic_payment.png'),
-                        height: 200,
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                          top: 20.0,
-                          bottom: 4.0
-                        ),
-                        child: Text('Rich Together', style: mainHeader)
-                      ),
-                      Text('Save Money \nBuild your fortune',
-                        style: subHeader,
-                        textAlign: TextAlign.center
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Image(
+                            image: AssetImage('assets/images/ic_payment.png'),
+                            height: 200,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                              top: 20.0,
+                              bottom: 4.0
+                            ),
+                            child: Text('Rich Together', style: mainHeader)
+                          ),
+                          Text('Save Money \nBuild your fortune',
+                            style: subHeader,
+                            textAlign: TextAlign.center
+                          )
+                        ],
                       )
-                    ],
+                    ]
                   )
                 )
             )
